@@ -85,7 +85,7 @@
             android:layout_marginTop="12dp"
             android:textSize="15sp" />
         <EditText
-            android:id="@+id/confirmPassword"
+            android:id="@+id/et_confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Enter Re-Password"
@@ -95,7 +95,7 @@
             android:layout_marginTop="12dp"
             android:textSize="15sp" />
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_reg"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_below="@id/et_password"
