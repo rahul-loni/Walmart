@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Walmart"
         tools:targetApi="31">
         <activity
-            android:name=".Home"
+            android:name=".SplaceScreen"
             android:exported="false" />
         <activity
             android:name=".ForgotPassword"
@@ -29,7 +29,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplaceScreen"
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
