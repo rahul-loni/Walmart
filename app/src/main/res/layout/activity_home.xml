@@ -57,7 +57,7 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-               android:background="@null"
+                android:background="@null"
                 android:hint="Search Something"/>
             <ImageView
                 android:layout_width="40dp"
@@ -181,7 +181,7 @@
                 app:layout_constraintDimensionRatio="H,1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/addItem"
-               app:layout_constraintTop_toBottomOf="@id/add_customer"
+                app:layout_constraintTop_toBottomOf="@id/add_customer"
                 >
                 <ImageView
                     android:layout_width="100dp"
@@ -260,56 +260,67 @@
                     android:textColor="@color/black"/>
 
             </LinearLayout>
-         <androidx.constraintlayout.widget.ConstraintLayout
-             android:id="@+id/card"
-             android:layout_width="0dp"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="20dp"
-             android:background="@drawable/card_layout"
-             android:padding="20dp"
-             app:layout_constraintEnd_toEndOf="@id/add_customer"
-             app:layout_constraintStart_toStartOf="@id/edit_items"
-             app:layout_constraintTop_toBottomOf="@id/edit_items"
-             >
-             <TextView
-                 android:id="@+id/cardText"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:background="@drawable/white_baground"
-                 android:paddingStart="8dp"
-                 android:paddingTop="2dp"
-                 android:paddingEnd="8dp"
-                 android:paddingBottom="2dp"
-                 android:text="walmart !!!"
-                 android:textColor="@color/purple_500"
-                 android:textSize="18sp"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintTop_toTopOf="parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/card_layout"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="@id/add_customer"
+                app:layout_constraintStart_toStartOf="@id/edit_items"
+                app:layout_constraintTop_toBottomOf="@id/edit_items"
+                >
+                <TextView
+                    android:id="@+id/cardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_baground"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="walmart !!!"
+                    android:textColor="@color/purple_500"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
 
-                 />
-             <ImageView
-                 android:id="@+id/card_img"
-                 android:layout_width="30dp"
-                 android:layout_height="30dp"
-                 android:contentDescription="@string/app_name"
-                 app:layout_constraintBottom_toBottomOf="@id/cardText"
-                 app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintTop_toTopOf="@id/cardText"
-                 android:src="@drawable/ic_baseline_local_shipping_24"
-                 app:tint="@color/black" />
-             <TextView
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:textSize="18sp"
-                 android:textColor="@color/black"
-                 app:layout_constraintTop_toBottomOf="@id/card_img"
-                 app:layout_constraintStart_toStartOf="parent"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 android:layout_marginTop="6dp"
-                 android:text="@string/card_text"/>
+                    />
+                <ImageView
+                    android:id="@+id/card_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="@id/cardText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/cardText"
+                    android:src="@drawable/ic_baseline_local_shipping_24"
+                    app:tint="@color/black" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/card_img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/card_text"/>
 
-         </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/navigation"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:menu="@menu/menu"
+       android:backgroundTint="@color/white"
+       app:itemIconSize="30dp"
+       app:labelVisibilityMode="unlabeled"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

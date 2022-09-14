@@ -12,7 +12,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="5dp">
+        android:padding="5dp"
+        >
         <androidx.cardview.widget.CardView
             android:id="@+id/back_arrow_login"
             android:layout_width="50dp"
@@ -119,6 +120,7 @@
             android:textColor="#EF0C4C"
             android:onClick="Forgot_Password"/>
     </LinearLayout>
+
 
 
 
