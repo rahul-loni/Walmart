@@ -1,2 +1,4 @@
-package com.example.walmart.model;public class CustomerModel {
+package com.example.walmart.model;
+public class CustomerModel {
+
 }
