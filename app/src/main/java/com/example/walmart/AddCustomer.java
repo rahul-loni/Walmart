@@ -87,9 +87,6 @@ public class AddCustomer extends AppCompatActivity {
 
         super.onActivityResult(requestCode, resultCode, data);
     }
-
-
-
     public void init(){
         cName=findViewById(R.id.C_name);
         cAdd=findViewById(R.id.C_add);
